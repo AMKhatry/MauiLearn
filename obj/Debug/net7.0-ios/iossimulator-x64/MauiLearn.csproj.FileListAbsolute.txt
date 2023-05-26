@@ -267,3 +267,4 @@ C:\Users\User\Aditya\Personal\Repo\MauiLearn\obj\Debug\net7.0-ios\iossimulator-x
 C:\Users\User\Aditya\Personal\Repo\MauiLearn\obj\Debug\net7.0-ios\iossimulator-x64\MauiLearn.pdb
 C:\Users\User\Aditya\Personal\Repo\MauiLearn\obj\Debug\net7.0-ios\iossimulator-x64\MauiLearn.genruntimeconfig.cache
 C:\Users\User\Aditya\Personal\Repo\MauiLearn\obj\Debug\net7.0-ios\iossimulator-x64\ref\MauiLearn.dll
+C:\Users\User\Aditya\Personal\Repo\MauiLearn\obj\Debug\net7.0-ios\iossimulator-x64\build-signature\signature
