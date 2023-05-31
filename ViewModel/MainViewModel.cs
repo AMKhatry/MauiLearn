@@ -8,9 +8,11 @@ namespace MauiLearn.ViewModel
 {
     public partial class MainViewModel : ObservableObject 
     {
-        public MainViewModel()
+        IConnectivity connectivity;
+        public MainViewModel(IConnectivity connectivity)
         {
             Items = new ObservableCollection<string>();
+            this.connectivity = connectivity;
         }
 
         [ObservableProperty]
@@ -20,10 +22,16 @@ namespace MauiLearn.ViewModel
         string text;
 
         [RelayCommand]
-        void Add()
+        async void Add()
         {
             if (string.IsNullOrWhiteSpace(Text))
                 return;
+
+            if(connectivity.NetworkAccess != NetworkAccess.Internet)
+            {
+                await Shell.Current.DisplayAlert("Uh Oh!", "No Internet", "OK");
+                return;
+            }
 
             Items.Add(Text);
 
